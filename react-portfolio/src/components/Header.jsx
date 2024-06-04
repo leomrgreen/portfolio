@@ -1,13 +1,15 @@
 import github from "../assets/github.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
-import { useRef } from "react";
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { useRef, useState } from "react";
 
 const Header = () => {
   const navRef = useRef();
+  const [isNavActive, setIsNavActive] = useState(false);
 
   const showNavBar = () => {
-    navRef.current.classList.toggle('active')
+    navRef.current.classList.toggle('active');
+    setIsNavActive(!isNavActive);
   }
 
   return (
@@ -20,7 +22,11 @@ const Header = () => {
         <li>Contact</li>
       </ul>
       <img src={github} alt="github logo" className="github-logo"/>
-      <FontAwesomeIcon icon={faBars} className="burger" onClick={showNavBar}/>
+      <FontAwesomeIcon
+        icon={isNavActive ? faXmark : faBars}
+        className="burger"
+        onClick={showNavBar}
+      />
     </nav>
   );
 }

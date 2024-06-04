@@ -37,6 +37,7 @@ ul {
 
   .burger {
     display: flex;
+    font-size: 25px;
   }
 
   .navLinks {
