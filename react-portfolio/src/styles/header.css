@@ -1,0 +1,24 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-dark-400);
+  color: white;
+  width: min(1200px, 100%);
+  margin: auto;
+  padding: 1rem 2rem 1rem 2rem;
+  align-items: center;
+  margin-top: 1rem;
+  border-radius: 20px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  font-size: 15px;
+}
+
+.logo {
+  font-size: 35px;
+  font-weight: 300;
+}

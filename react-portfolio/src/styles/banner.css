@@ -1,0 +1,35 @@
+.banner {
+  width: min(90rem, 90%);
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  margin-inline: auto;
+}
+
+.welcome {
+  color: white;
+}
+
+.banner-img-container img {
+  max-width: 100%;
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  mask-image: radial-gradient(
+    circle,
+    rgba(18, 18, 18, 1) 0%,
+    rgba(29, 185, 84, 0.4206057422969187) 50%,
+    rgba(18, 18, 18, 1) 100%
+  );
+}
+
+h1 {
+  font-size: 55px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.dev-type {
+  color: var(--color-primary-100);
+}
