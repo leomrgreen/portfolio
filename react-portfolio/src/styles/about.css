@@ -1,0 +1,96 @@
+.about-section {
+  background-color: var(--color-surface-mixed-100);
+  padding: 2rem;
+}
+
+.about-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  gap: 1rem;
+  color: white;
+}
+
+.about-title h2 {
+  font-size: 50px;
+}
+
+.fa-info {
+  font-size: 50px;
+  color: var(--color-primary-100);
+}
+
+.about-container {
+  width: min(70rem, 95%);
+  margin: auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.about-card {
+  background-color: var(--color-surface-mixed-200);
+  color: var(--color-dark-600);
+  padding: 1rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+@media (min-width: 1000px) {
+  .about-card:first-child {
+    grid-row: span 2;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.findMe {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-primary-500);
+  padding: 0.5rem;
+  margin-top: 10px;
+  width: 50%;
+  border-radius: 20px;
+  justify-content: space-around;
+}
+
+.findMe svg {
+  fill: #0a66c2;
+  height: 30px;
+  width: 25.5px;
+}
+
+.findMeLink {
+  text-decoration: none;
+  color: var(--color-surface-mixed-100);
+  font-weight: 500;
+}
+
+.card-title {
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-primary-100);
+}
+
+.card-title span {
+  color: white;
+}
+
+.spanmark {
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .findMe {
+    width: 100%;
+  }
+}

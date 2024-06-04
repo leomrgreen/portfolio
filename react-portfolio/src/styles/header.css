@@ -1,14 +1,18 @@
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-dark-400);
+  background-color: var(--color-dark-300);
   color: white;
   width: min(1200px, 100%);
   margin: auto;
   padding: 1rem 2rem 1rem 2rem;
   align-items: center;
   margin-top: 1rem;
+  position: fixed;
   border-radius: 20px;
+  z-index: 1000;
+  left: 0;
+  right: 0;
 }
 
 ul {
@@ -41,7 +45,7 @@ ul {
   }
 
   .navLinks {
-    position: absolute;
+    position: fixed;
     display: none;
     top: 0;
     left: 0;

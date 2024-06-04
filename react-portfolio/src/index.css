@@ -1,6 +1,7 @@
 @import "./styles/root.css";
 @import "./styles/header.css";
 @import "./styles/banner.css";
+@import "./styles/about.css";
 
 *,
 *::after,

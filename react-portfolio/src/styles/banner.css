@@ -4,7 +4,12 @@
   grid-template-columns: repeat(2, auto);
   align-items: center;
   margin-inline: auto;
-  height: 80vh;
+}
+
+@media (max-width: 1000px) {
+  .banner {
+    padding-top: 5rem;
+  }
 }
 
 .welcome {
