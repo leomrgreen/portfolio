@@ -54,6 +54,7 @@ h2 {
   font-size: 18px;
   font-weight: 500;
   background-color: var(--color-primary-500);
+  margin-top: 10px;
 }
 
 .readmore-btn:hover {
