@@ -1,4 +1,4 @@
-import github from "../images/github.svg";
+import github from "../assets/github.svg";
 
 const Header = () => {
   return (

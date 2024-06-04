@@ -4,10 +4,13 @@
   grid-template-columns: repeat(2, auto);
   align-items: center;
   margin-inline: auto;
+  height: 80vh;
 }
 
 .welcome {
   color: white;
+  display: grid;
+  gap: 2rem;
 }
 
 .banner-img-container img {
@@ -18,7 +21,7 @@
     circle,
     rgba(18, 18, 18, 1) 0%,
     rgba(29, 185, 84, 0.4206057422969187) 50%,
-    rgba(18, 18, 18, 1) 100%
+    rgb(34, 41, 34) 100%
   );
 }
 
@@ -30,6 +33,39 @@ h2 {
   font-size: 40px;
 }
 
+h1,
+h2 {
+  font-weight: 300;
+}
+
 .dev-type {
   color: var(--color-primary-100);
+  font-weight: 500;
+}
+
+.readmore-btn {
+  width: 45%;
+  padding: 15px 0 15px 0;
+  border-radius: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: var(--color-primary-500);
+}
+
+.readmore-btn:hover {
+  background-color: var(--color-primary-100);
+  transition: 200ms ease;
+}
+
+@media (max-width: 1000px) {
+  .banner {
+    grid-template-columns: 1fr;
+  }
+  .readmore-btn {
+    width: 100%;
+  }
 }
