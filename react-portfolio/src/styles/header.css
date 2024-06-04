@@ -21,4 +21,56 @@ ul {
 .logo {
   font-size: 35px;
   font-weight: 300;
+  z-index: 1000;
+}
+
+.burger {
+  display: none;
+  z-index: 1000;
+}
+
+@media (max-width: 1000px) {
+  nav {
+    margin-top: 0;
+    border-radius: 0;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .navLinks {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    background-color: var(--color-dark-400);
+  }
+
+  .navLinks.active {
+    display: flex;
+    animation: slideIn 200ms ease;
+  }
+
+  .github-logo {
+    display: none;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }
