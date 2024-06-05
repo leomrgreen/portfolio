@@ -1,6 +1,6 @@
-import github from "../assets/github.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { useRef, useState } from "react";
 
 const Header = () => {
@@ -13,15 +13,15 @@ const Header = () => {
   }
 
   return (
-    <nav>
-      <a href="https://github.com/leomrgreen" className="logo"><h1>Leo</h1></a>
+    <nav id='nav'>
+      <a href="/" className="logo"><h1>Leo</h1></a>
       <ul ref={navRef} className="navLinks">
-        <li>About</li>
-        <li>Past Work</li>
-        <li>Skills</li>
-        <li>Contact</li>
+        <li><a href="#about-section" onClick={showNavBar}>About</a></li>
+        <li><a href="#">Past Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
-      <img src={github} alt="github logo" className="github-logo"/>
+      <a href="https://github.com/leomrgreen" className='github-logo'><FontAwesomeIcon icon={faGithub} /></a>
       <FontAwesomeIcon
         icon={isNavActive ? faXmark : faBars}
         className="burger"

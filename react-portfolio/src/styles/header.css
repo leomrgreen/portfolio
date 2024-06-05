@@ -11,6 +11,12 @@ nav {
   z-index: 1000;
 }
 
+.github-logo {
+  color: white;
+  text-decoration: none;
+  font-size: 35px;
+}
+
 ul {
   display: flex;
   list-style: none;
@@ -18,8 +24,25 @@ ul {
   font-size: 15px;
 }
 
-li {
+li a {
   cursor: pointer;
+  color: var(--color-dark-600);
+  font-weight: 600;
+  transition: 100ms ease-out;
+  text-decoration: none;
+}
+
+li:hover {
+  scale: 1.05;
+  transition: 100ms ease-in;
+  color: var(--color-primary-300);
+}
+
+.logo:hover,
+.logo h1:hover,
+.github-logo:hover {
+  color: var(--color-primary-300);
+  transition: 200ms ease;
 }
 
 .logo,
@@ -29,6 +52,7 @@ li {
   z-index: 1000;
   text-decoration: none;
   color: white;
+  font-family: "Anton", sans-serif;
 }
 
 .burger {

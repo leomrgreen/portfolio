@@ -1,11 +1,13 @@
-import arrow from "../assets/arrowdown.svg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { ReactTyped } from "react-typed"
 
 const Banner = () => {
   return (
+    <>
     <section className="banner-section">
       <div className="banner">
-      <div className="welcome">
+      <div className="welcome hidden">
         <h1>Hi there,</h1>
         <h2>I Am Into 
           <ReactTyped strings={[
@@ -18,10 +20,12 @@ const Banner = () => {
           loop
           className="dev-type">
           </ReactTyped> </h2>
-        <button className="readmore-btn">Read More <img src={arrow} alt="arrow down icon" /> </button>
       </div>
+      <a href="#about-section" className="readmore-btn">Read More <FontAwesomeIcon icon={faCircleArrowDown} /> </a>
       </div>
     </section>
+    <div className="banner-img"></div>
+    </>
   );
 };
 

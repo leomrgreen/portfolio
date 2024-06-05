@@ -1,10 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircleInfo, faUserTie, faChartLine, faGears } from '@fortawesome/free-solid-svg-icons'
+import { faCircleInfo, faUserTie, faChartLine, faGears, faCircleArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import aboutdev from "../images/dev.png"
 
 const About = () => {
   return (
-    <section className="about-section">
+   <>
+     <section className="about-section hidden" id='about-section'>
       <div className='about-title'><h2>About</h2> <FontAwesomeIcon icon={faCircleInfo} className='fa-info'/></div>
       <div className="about-container">
         <div className="about-card">
@@ -40,6 +42,8 @@ const About = () => {
         </div>
       </div>
     </section>
+    <img src={aboutdev} alt="developer in his chair" className='dev-chair hidden'/>
+   </>
   )
 }
 

@@ -18,7 +18,8 @@
 }
 
 .about-title h2 {
-  font-size: 50px;
+  font-size: 70px;
+  font-family: "Anton", sans-serif;
 }
 
 .fa-info {
@@ -42,6 +43,11 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
+  transition: 200ms all;
+}
+
+.about-container:hover .about-card:not(:hover) {
+  filter: blur(3px);
 }
 
 @media (min-width: 1000px) {
@@ -67,14 +73,14 @@
 }
 
 .linkedInIcon {
-  color: #0a66c2;
+  color: var(--color-dark-100);
   font-size: 30px;
 }
 
 .findMeLink {
   text-decoration: none;
-  color: var(--color-surface-mixed-100);
-  font-weight: 500;
+  color: var(--color-dark-100);
+  font-weight: 700;
   transition: 200ms ease;
 }
 
@@ -102,4 +108,20 @@
   .findMe {
     width: 100%;
   }
+}
+
+.dev-chair {
+  width: min(700px, 95%);
+  margin: auto;
+  display: flex;
+  filter: blur(10px);
+}
+
+.dev-chair.visible {
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+.dev-chair.hidden {
+  transform: translateY(20%);
 }
