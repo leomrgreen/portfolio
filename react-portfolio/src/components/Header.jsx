@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <nav>
-      <h1 className="logo">Leo</h1>
+      <a href="https://github.com/leomrgreen" className="logo"><h1>Leo</h1></a>
       <ul ref={navRef} className="navLinks">
         <li>About</li>
         <li>Past Work</li>

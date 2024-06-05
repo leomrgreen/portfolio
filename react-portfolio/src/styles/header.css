@@ -1,18 +1,14 @@
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-dark-300);
   color: white;
   width: min(1200px, 100%);
   margin: auto;
   padding: 1rem 2rem 1rem 2rem;
   align-items: center;
   margin-top: 1rem;
-  position: fixed;
   border-radius: 20px;
   z-index: 1000;
-  left: 0;
-  right: 0;
 }
 
 ul {
@@ -22,10 +18,17 @@ ul {
   font-size: 15px;
 }
 
-.logo {
-  font-size: 35px;
+li {
+  cursor: pointer;
+}
+
+.logo,
+.logo h1 {
+  font-size: 40px;
   font-weight: 300;
   z-index: 1000;
+  text-decoration: none;
+  color: white;
 }
 
 .burger {
@@ -57,7 +60,7 @@ ul {
     justify-content: center;
     align-items: center;
     transition: 0.3s ease;
-    background-color: var(--color-dark-400);
+    background-color: var(--color-dark-300);
   }
 
   .navLinks.active {

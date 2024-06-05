@@ -1,5 +1,10 @@
+.avatar {
+  width: min(70rem, 90%);
+  margin: auto;
+}
+
 .about-section {
-  background-color: var(--color-surface-mixed-100);
+  background-color: var(--color-dark-100);
   padding: 2rem;
 }
 
@@ -18,7 +23,7 @@
 
 .fa-info {
   font-size: 50px;
-  color: var(--color-primary-100);
+  color: var(--color-primary-500);
 }
 
 .about-container {
@@ -29,9 +34,9 @@
 }
 
 .about-card {
-  background-color: var(--color-surface-mixed-200);
-  color: var(--color-dark-600);
-  padding: 1rem;
+  background-color: var(--color-dark-200);
+  color: var(--color-surface-mixed-600);
+  padding: 1.5rem;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -61,16 +66,20 @@
   justify-content: space-around;
 }
 
-.findMe svg {
-  fill: #0a66c2;
-  height: 30px;
-  width: 25.5px;
+.linkedInIcon {
+  color: #0a66c2;
+  font-size: 30px;
 }
 
 .findMeLink {
   text-decoration: none;
   color: var(--color-surface-mixed-100);
   font-weight: 500;
+  transition: 200ms ease;
+}
+
+.findMe:hover {
+  background-color: var(--color-primary-100);
 }
 
 .card-title {
@@ -78,7 +87,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: var(--color-primary-100);
+  color: var(--color-primary-500);
 }
 
 .card-title span {
