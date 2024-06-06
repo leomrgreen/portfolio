@@ -1,0 +1,72 @@
+.projects-title {
+  color: white;
+  font-family: "Anton", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.fork {
+  font-size: 50px;
+  color: var(--color-primary-500);
+}
+
+.projects-title h2 {
+  font-size: 70px;
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px var(--color-dark-100);
+}
+
+.project-grid {
+  width: min(90rem, 95%);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-card {
+  background-color: var(--color-surface-mixed-200);
+  padding: 1rem;
+  border-radius: 20px;
+  color: var(--color-dark-600);
+  padding: 1rem;
+}
+
+.project-card h4 {
+  font-size: 35px;
+  font-weight: 300;
+  padding: 1rem;
+  text-align: center;
+}
+
+.project-section {
+  background-color: var(--color-surface-mixed-100);
+  padding: 5rem 0 5rem 0;
+}
+
+.src-code {
+  color: var(--color-primary-500);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-surface-mixed-300);
+  width: 50%;
+  padding: 1rem;
+  margin: 10px auto 10px auto;
+  border-radius: 20px;
+  font-size: 30px;
+}
+
+@media (max-width: 1000px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}

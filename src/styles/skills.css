@@ -45,8 +45,14 @@
   text-align: center;
 }
 
+.response-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .response img {
-  width: min(500px, 100%);
+  width: min(800px, 100%);
   margin-inline: auto;
 }
 
@@ -181,4 +187,11 @@
     rgba(145, 113, 248, 0.7245273109243697) 51%,
     rgba(26, 22, 37, 1) 100%
   );
+}
+
+@media (max-width: 600px) {
+  .bento-grid {
+    padding: 0 0 3rem 0;
+    grid-template-columns: 1fr;
+  }
 }

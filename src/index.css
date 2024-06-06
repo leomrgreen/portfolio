@@ -3,6 +3,8 @@
 @import "./styles/banner.css";
 @import "./styles/about.css";
 @import "./styles/skills.css";
+@import "./styles/portfolio.css";
+@import "./styles/contact.css";
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
 *,

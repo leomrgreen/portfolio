@@ -1,0 +1,15 @@
+.contact-title {
+  font-family: "Anton", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  gap: 10px;
+  color: var(--color-primary-500);
+  padding-top: 2rem;
+}
+
+.contact-title h2 {
+  font-size: 70px;
+  color: white;
+}

@@ -3,6 +3,8 @@ import Header from "./components/Header"
 import Banner from "./components/Banner";
 import About from "./components/About"
 import Skills from "./components/Skills";
+import Portfolio from "./components/PastWork";
+import Contact from "./components/Contact";
 
 function App() {
   useEffect(() => {
@@ -39,6 +41,8 @@ function App() {
       <Banner />
       <About />
       <Skills />
+      <Portfolio />
+      <Contact />
     </>
   )
 }

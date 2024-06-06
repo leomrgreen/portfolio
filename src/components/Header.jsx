@@ -17,9 +17,9 @@ const Header = () => {
       <a href="/" className="logo"><h1>Leo</h1></a>
       <ul ref={navRef} className="navLinks">
         <li><a href="#about-section" onClick={showNavBar}>About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#">Past Work</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#skills" onClick={showNavBar}>Skills</a></li>
+        <li><a href="#projects" onClick={showNavBar}>Projects</a></li>
+        <li><a href="#" onClick={showNavBar}>Contact</a></li>
       </ul>
       <a href="https://github.com/leomrgreen" className='github-logo'><FontAwesomeIcon icon={faGithub} /></a>
       <FontAwesomeIcon
