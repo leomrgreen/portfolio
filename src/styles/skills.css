@@ -142,6 +142,23 @@
   border-radius: 20px;
 }
 
+.comp-page,
+.avatar,
+.searchbar {
+  transition: 200ms ease;
+}
+
+.comp-page:hover,
+.searchbar:hover {
+  background-color: var(--color-primary-600);
+  transition: 200ms ease;
+}
+
+.avatar:hover {
+  color: var(--color-primary-600);
+  transition: 200ms ease;
+}
+
 .tech-title {
   color: white;
   font-size: 35px;
@@ -159,6 +176,7 @@
   font-family: sans-serif;
   color: var(--color-dark-600);
   font-size: 20px;
+  transition: 200ms ease;
 }
 
 .bento-grid {
@@ -177,6 +195,50 @@
 
 .tech-stack {
   padding: 5rem 1rem 5rem 1rem;
+}
+
+.stack:first-child:hover {
+  background-color: #e34c26;
+  color: white;
+  transition: 200ms ease;
+}
+
+.stack:nth-child(2):hover {
+  background-color: #264de4;
+  color: white;
+  transition: 200ms ease;
+}
+
+.stack:nth-child(3):hover {
+  background-color: #06b6d4;
+  color: white;
+  transition: 200ms ease;
+}
+
+.stack:nth-child(4):hover {
+  background-color: #61dbfb;
+  color: var(--color-dark-100);
+  transition: 200ms ease;
+}
+
+.stack:nth-child(5):hover {
+  background-color: #f0db4f;
+  color: var(--color-dark-100);
+  transition: 200ms ease;
+}
+
+.stack:nth-child(6):hover {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 114, 98, 1) 27%,
+    rgba(162, 89, 255, 1) 51%,
+    rgba(26, 188, 254, 1) 72%,
+    rgba(10, 207, 131, 1) 86%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  color: white;
+  transition: 200ms ease;
 }
 
 .skill-gradient {
