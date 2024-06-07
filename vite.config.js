@@ -2,9 +2,9 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/portfolio/',
   plugins: [react()],
-  optimizeDeps: {
-    include: ['react-typed']
-  }
+  build: {
+    outDir: 'dist'
+  },
+  base: './', // Ensures that paths are relative
 })

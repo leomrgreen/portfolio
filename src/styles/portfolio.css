@@ -49,6 +49,13 @@
   text-align: center;
 }
 
+.project-card span {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
 .project-section {
   background-color: var(--color-surface-mixed-100);
   padding: 5rem 0 5rem 0;

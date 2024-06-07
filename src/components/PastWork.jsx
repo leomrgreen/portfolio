@@ -14,6 +14,7 @@ const Portfolio = () => {
                 {projects.map((project, index) => (
                 <div className="project-card hidden" key={index}>
                     <h4>{project.title}</h4>
+                    <span>{project.description}</span>
                     <img src={project.image.url} alt={project.image.alt} />
                     <a href={project.github} target="_blank" className="src-code"><FontAwesomeIcon icon={faCode} /> </a>
                 </div>
