@@ -19,7 +19,7 @@ const Header = () => {
         <li><a href="#about-section" onClick={showNavBar}>About</a></li>
         <li><a href="#skills" onClick={showNavBar}>Skills</a></li>
         <li><a href="#projects" onClick={showNavBar}>Projects</a></li>
-        <li><a href="#" onClick={showNavBar}>Contact</a></li>
+        <li><a href="#contact-section" onClick={showNavBar}>Contact</a></li>
       </ul>
       <a href="https://github.com/leomrgreen" className='github-logo'><FontAwesomeIcon icon={faGithub} /></a>
       <FontAwesomeIcon

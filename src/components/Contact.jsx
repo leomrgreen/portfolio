@@ -18,14 +18,14 @@ const Contact = () => {
     }
 
     return (
-        <section className='contact-section'>
+        <section className='contact-section hidden'>
             <div className="contact-title">
                 <h2>Contact</h2>
                 <FontAwesomeIcon icon={faPhone} />
             </div>
             <div className="contact-card">
-                <img src={chatimg} alt="man standing next to a big phone" />
-                <div className="btn-container-contact">
+                <img src={chatimg} alt="man standing next to a big phone" className='hidden'/>
+                <div className="btn-container-contact hidden">
                     <button onClick={copyEmailToClipboard}>
                         {buttonText} 
                         <FontAwesomeIcon icon={faEnvelope} />
