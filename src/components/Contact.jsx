@@ -18,7 +18,7 @@ const Contact = () => {
     }
 
     return (
-        <section className='contact-section hidden'>
+        <section className='contact-section hidden' id='contact-section'>
             <div className="contact-title">
                 <h2>Contact</h2>
                 <FontAwesomeIcon icon={faPhone} />
