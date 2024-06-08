@@ -28,7 +28,7 @@ const About = () => {
         <div className="about-card">
           <div className="card-title"><FontAwesomeIcon icon={faChartLine} />
           <span>My Goals</span></div>
-        <p>My <span className="spanmark">main goal</span> is to become a <span className="spanmark">full-time front-end developer</span> and therefore I am to master Javascript. I am dedicated to continuous learning and tackling challenging projects to achieve this. 
+        <p>My <span className="spanmark">main goal</span> is to become a <span className="spanmark">full-time front-end developer</span> and therefore I aim to master Javascript. I am dedicated to continuous learning and tackling challenging projects to achieve this. 
           Alongside this, I aim to explore various frameworks and libraries like <span className="spanmark">React, Vue.js</span>, and <span className="spanmark">Angular</span> to become a versatile and well-rounded developer. </p>
           </div>
         <div className="about-card">

@@ -10,7 +10,7 @@ const Contact = () => {
     const copyEmailToClipboard = () => {
         navigator.clipboard.writeText("jonssonleonardo@gmail.com")
             .then(() => {
-                setButtonText('Copied!');
+                setButtonText('Copied To Clipboard!');
             })
             .catch(err => {
                 console.error('Error copying text: ', err);
