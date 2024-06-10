@@ -29,7 +29,7 @@ const Contact = () => {
 
         emailjs.sendForm(serviceID, templateID, formRef.current, publicKey)
             .then((result) => {
-                console.log(result.text);
+                console.log(result.text, 'success');
                 alert('Email sent!')
                 formRef.current.reset();  
             }, (error) => {
