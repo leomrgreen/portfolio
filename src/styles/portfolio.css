@@ -1,5 +1,5 @@
 .projects-title {
-  color: white;
+  color: var(--white);
   font-family: "Anton", sans-serif;
   display: flex;
   justify-content: center;
@@ -37,7 +37,7 @@
   padding: 1rem;
   border-radius: 20px;
   color: var(--color-dark-600);
-  box-shadow: 1px 5px 10px var(--color-dark-100);
+  box-shadow: 1px 5px 10px var(--shadow);
   padding: 1rem;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .src-code {
-  color: var(--color-primary-500);
+  color: white;
   text-decoration: none;
   display: flex;
   justify-content: center;

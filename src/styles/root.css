@@ -1,3 +1,31 @@
+:root.dark {
+  --color-primary-100: #7256ff;
+  --color-primary-200: #8768ff;
+  --color-primary-300: #997aff;
+  --color-primary-400: #aa8dff;
+  --color-primary-500: #775cbb;
+  --color-primary-600: #c9b2ff;
+  --color-dark-100: #ffffff;
+  --color-dark-200: #ebebeb;
+  --color-dark-300: #bbbbbb;
+  --color-dark-400: #adadad;
+  --color-dark-500: #a0a0a0;
+  --color-dark-600: #8b8b8b;
+  --color-surface-mixed-100: #574f6b;
+  --color-surface-mixed-200: #4f4370;
+  --color-surface-mixed-300: #4b3a72;
+  --color-surface-mixed-400: #4c347e;
+  --color-surface-mixed-500: #76737e;
+  --color-surface-mixed-600: #908d96;
+  --white: #000;
+  --gradient: radial-gradient(
+    closest-side,
+    rgba(145, 113, 248, 0.63),
+    var(--color-dark-100)
+  );
+  --shadow: #bbbbbb;
+}
+
 :root {
   --color-primary-100: #7256ff;
   --color-primary-200: #8768ff;
@@ -17,4 +45,11 @@
   --color-surface-mixed-400: #5e5a66;
   --color-surface-mixed-500: #76737e;
   --color-surface-mixed-600: #908d96;
+  --white: #fff;
+  --gradient: radial-gradient(
+    closest-side,
+    rgba(145, 113, 248, 0.21),
+    var(--color-dark-100)
+  );
+  --shadow: #000000;
 }

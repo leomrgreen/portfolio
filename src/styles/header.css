@@ -1,7 +1,7 @@
 nav {
   display: flex;
   justify-content: space-between;
-  color: white;
+  color: var(--white);
   width: min(1200px, 100%);
   margin: auto;
   padding: 1rem 2rem 1rem 2rem;
@@ -11,17 +11,12 @@ nav {
   z-index: 1000;
 }
 
-.github-logo {
-  color: white;
-  text-decoration: none;
-  font-size: 35px;
-}
-
 ul {
   display: flex;
   list-style: none;
   gap: 1rem;
   font-size: 15px;
+  align-items: center;
 }
 
 li a {
@@ -40,7 +35,8 @@ li:hover {
 
 .logo:hover,
 .logo h1:hover,
-.github-logo:hover {
+.github-logo:hover,
+.dark-toggle:hover {
   color: var(--color-primary-300);
   transition: 200ms ease;
 }
@@ -51,7 +47,7 @@ li:hover {
   font-weight: 300;
   z-index: 1000;
   text-decoration: none;
-  color: white;
+  color: var(--white);
   font-family: "Anton", sans-serif;
 }
 
@@ -64,6 +60,7 @@ li:hover {
   nav {
     margin-top: 0;
     border-radius: 0;
+    align-items: center;
   }
 
   .burger {
@@ -84,16 +81,12 @@ li:hover {
     justify-content: center;
     align-items: center;
     transition: 0.3s ease;
-    background-color: var(--color-dark-300);
+    background-color: var(--color-dark-100);
   }
 
   .navLinks.active {
     display: flex;
     animation: slideIn 200ms ease;
-  }
-
-  .github-logo {
-    display: none;
   }
 }
 
@@ -105,4 +98,32 @@ li:hover {
   to {
     transform: translateX(0);
   }
+}
+
+.dark-toggle {
+  background: none;
+  color: var(--white);
+  font-size: 24px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.sun-icon {
+  background-color: none;
+  display: block;
+}
+
+.moon-icon {
+  display: block;
+}
+
+.github-logo {
+  color: var(--white);
+  text-decoration: none;
+  display: block;
+  font-size: 27px;
 }

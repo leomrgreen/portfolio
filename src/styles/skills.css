@@ -1,7 +1,7 @@
 .skills-title h2 {
   font-family: "Anton", sans-serif;
   font-size: 70px;
-  color: white;
+  color: var(--white);
 }
 
 .skills-title {
@@ -39,7 +39,7 @@
 .response {
   font-family: "Anton", sans-serif;
   font-size: 35px;
-  color: white;
+  color: var(--white);
   display: grid;
   margin-inline: auto;
   text-align: center;
@@ -69,7 +69,7 @@
 
 .comp-title {
   font-family: "Anton", sans-serif;
-  color: white;
+  color: var(--white);
   font-size: 35px;
   margin-bottom: 1rem;
 }
@@ -121,7 +121,7 @@
 
 .avatar {
   font-size: 25px;
-  color: white;
+  color: var(--white);
   display: flex;
   justify-content: flex-start;
 }
@@ -160,7 +160,7 @@
 }
 
 .tech-title {
-  color: white;
+  color: var(--white);
   font-size: 35px;
   margin-bottom: 1rem;
   margin-inline: auto;
@@ -199,31 +199,31 @@
 
 .stack:first-child:hover {
   background-color: #e34c26;
-  color: white;
+  color: var(--white);
   transition: 200ms ease;
 }
 
 .stack:nth-child(2):hover {
   background-color: #264de4;
-  color: white;
+  color: var(--white);
   transition: 200ms ease;
 }
 
 .stack:nth-child(3):hover {
   background-color: #06b6d4;
-  color: white;
+  color: var(--white);
   transition: 200ms ease;
 }
 
 .stack:nth-child(4):hover {
   background-color: #61dbfb;
-  color: var(--color-dark-100);
+  color: black;
   transition: 200ms ease;
 }
 
 .stack:nth-child(5):hover {
   background-color: #f0db4f;
-  color: var(--color-dark-100);
+  color: black;
   transition: 200ms ease;
 }
 
