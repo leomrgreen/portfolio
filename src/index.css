@@ -22,6 +22,10 @@ body {
   font-family: sans-serif;
 }
 
+html {
+  scrollbar-width: thin;
+}
+
 button {
   font-family: sans-serif;
   border: none;
@@ -31,7 +35,7 @@ button {
 
 .hidden {
   opacity: 0;
-  transition: all 1s;
+  transition: 1s all;
 }
 
 .visible {

@@ -19,6 +19,7 @@
   background-color: var(--color-dark-100);
   width: min(90rem, 100%);
   margin: auto;
+  align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   border: 2px solid var(--color-primary-500);
@@ -40,6 +41,7 @@
 
 .btn-container-contact {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 10px;
 }
@@ -55,43 +57,13 @@
   background-color: var(--color-dark-100);
   border: 2px solid var(--white);
   color: var(--white);
-  border-radius: 20px;
-}
-
-.media {
-  width: 250px;
-  background-color: var(--color-dark-100);
-  border: 2px solid var(--white);
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1rem 0 1rem 0;
-  border-radius: 20px;
+  border-radius: 15px;
+  margin: auto;
 }
 
 .btn-container-contact button:hover {
-  background-color: var(--color-primary-100);
-}
-
-.media a {
-  font-size: 30px;
-  color: var(--white);
-  text-decoration: none;
-}
-
-.media a:hover {
-  color: var(--color-primary-500);
-}
-
-@media (max-width: 800px) {
-  .btn-container-contact {
-    flex-direction: column;
-  }
-
-  .btn-container-contact button,
-  .media {
-    margin: auto;
-  }
+  border-radius: 0;
+  transition: 200ms ease-in-out;
 }
 
 @media (max-width: 1200px) {
@@ -108,9 +80,10 @@
   width: 100%;
   margin: auto;
   background-color: var(--color-dark-200);
-  padding: 1rem;
+  padding: 2rem 1rem 2rem 1rem;
   border-radius: 20px;
   font-family: sans-serif;
+  box-shadow: 1px 0 10px var(--shadow);
 }
 
 .email-from {
@@ -142,4 +115,18 @@
 .send-btn:hover {
   background-color: var(--color-surface-mixed-300);
   transition: 200ms ease;
+}
+
+.contact-subtitle {
+  font-family: "Anton", sans-serif;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  color: var(--white);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

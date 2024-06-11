@@ -65,6 +65,7 @@
   border-radius: 20px;
   background-color: var(--color-dark-200);
   padding: 1rem;
+  box-shadow: 1px 0 10px var(--shadow);
 }
 
 .comp-title {

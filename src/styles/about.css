@@ -44,6 +44,7 @@
   justify-content: space-between;
   gap: 1rem;
   transition: 200ms all;
+  box-shadow: 1px 0 10px var(--shadow);
 }
 
 .about-container:hover .about-card:not(:hover) {

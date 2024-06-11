@@ -15,8 +15,8 @@ const Contact = () => {
             .then(() => {
                 setButtonText('Copied To Clipboard!');
             })
-            .catch(err => {
-                console.error('Error copying text: ', err);
+            .catch(error => {
+                console.error('Error copying text: ', error);
             });
     }
 
@@ -45,6 +45,8 @@ const Contact = () => {
                     <FontAwesomeIcon icon={faPhone} />
                 </div>
                 <div className="contact-card">
+               <div className='form-container'>
+               <span className="contact-subtitle">Fill Out This Form</span>
                     <form className='contact-form' onSubmit={sendEmail} ref={formRef}>
                         <label htmlFor="emailFrom">Your Email:</label>
                         <input type="text" name='email_from' id='emailFrom' className='email-from' placeholder='person@example.com'/>
@@ -52,16 +54,14 @@ const Contact = () => {
                         <textarea name="message" id="message" rows={10} className='message-box' placeholder='Write me something...'></textarea>
                         <button type='submit' className='send-btn'>SEND <FontAwesomeIcon icon={faPaperPlane} /></button>
                     </form>
+               </div>
                     <img src={chatimg} alt="man standing next to a big phone" className='hidden'/>
                     <div className="btn-container-contact hidden">
+                        <span className="contact-subtitle">Or Just</span>
                         <button onClick={copyEmailToClipboard}>
                             {buttonText} 
                             <FontAwesomeIcon icon={faEnvelope} />
                         </button>
-                        <div className="media"> 
-                            <a href="https://github.com/leomrgreen"> <FontAwesomeIcon icon={faGithub} /> </a>
-                            <a href="https://www.linkedin.com/in/leo-jonsson-b98048304/"> <FontAwesomeIcon icon={faLinkedin} /> </a>
-                        </div>
                     </div>
                 </div>
             </section>

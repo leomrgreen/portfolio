@@ -14,7 +14,7 @@ const Header = () => {
   }
 
   return (
-    <nav id='nav'>
+    <nav id='nav' className='hidden'>
       <a href="/" className="logo"><h1>Leo</h1></a>
       <ul ref={navRef} className="navLinks">
         <li><a href="#about-section" onClick={showNavBar} className='testar'>About</a></li>

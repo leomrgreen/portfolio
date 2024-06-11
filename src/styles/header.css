@@ -4,11 +4,15 @@ nav {
   color: var(--white);
   width: min(1200px, 100%);
   margin: auto;
+  position: sticky;
+  top: 0;
   padding: 1rem 2rem 1rem 2rem;
   align-items: center;
   margin-top: 1rem;
   border-radius: 20px;
   z-index: 1000;
+  background-color: var(--color-dark-100);
+  box-shadow: 1px 0 10px var(--shadow);
 }
 
 ul {
@@ -61,6 +65,7 @@ li:hover {
     margin-top: 0;
     border-radius: 0;
     align-items: center;
+    display: flex;
   }
 
   .burger {
@@ -93,10 +98,12 @@ li:hover {
 @keyframes slideIn {
   from {
     transform: translateX(100%);
+    scale: 0.5;
   }
 
   to {
     transform: translateX(0);
+    scale: 1;
   }
 }
 
