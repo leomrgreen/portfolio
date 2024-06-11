@@ -31,17 +31,17 @@ li a {
   text-decoration: none;
 }
 
-li:hover {
-  scale: 1.05;
+li a:hover {
   transition: 100ms ease-in;
-  color: var(--color-primary-300);
+  color: var(--white);
+  text-shadow: 0 0 30px var(--color-primary-100);
 }
 
 .logo:hover,
 .logo h1:hover,
 .github-logo:hover,
 .dark-toggle:hover {
-  color: var(--color-primary-300);
+  color: var(--color-primary-100);
   transition: 200ms ease;
 }
 
