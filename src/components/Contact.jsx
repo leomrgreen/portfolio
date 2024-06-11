@@ -3,7 +3,6 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import chatimg from "../images/Chat-pana.png";
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
