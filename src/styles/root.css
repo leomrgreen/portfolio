@@ -23,6 +23,7 @@
     rgba(145, 113, 248, 0.63),
     var(--color-dark-100)
   );
+
   --shadow: #bbbbbb;
 }
 
@@ -49,7 +50,8 @@
   --gradient: radial-gradient(
     closest-side,
     rgba(145, 113, 248, 0.21),
-    var(--color-dark-100)
+    #00000000
   );
+
   --shadow: #000000;
 }

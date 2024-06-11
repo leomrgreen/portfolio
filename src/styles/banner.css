@@ -11,11 +11,13 @@
 }
 
 .banner-section {
-  height: 65vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-image: url("../images/grid.png");
+  background-size: contain;
 }
 
 .welcome {
@@ -47,6 +49,10 @@ h2 {
 @media (max-width: 1000px) {
   h2 {
     font-size: 6vw;
+  }
+
+  .banner-section {
+    height: 80vh;
   }
 }
 
@@ -93,12 +99,27 @@ h2 {
 
 .banner-img {
   background-image: var(--gradient);
+  transform: translate(-80%, -50%);
   width: min(700px, 95%);
   display: flex;
   margin: auto;
   height: auto;
   aspect-ratio: 1;
   margin-top: -10rem;
+  position: absolute;
+  animation: breathe 2s ease-in;
+}
+
+.top-gradient {
+  left: 80%;
+  top: 20%;
+  z-index: -1;
+}
+
+.bottom-gradient {
+  left: 10%;
+  z-index: -1;
+  top: 100%;
 }
 
 .welcome.hidden {
@@ -107,4 +128,14 @@ h2 {
 
 .welcome.visible {
   transform: translateY(0);
+}
+
+@keyframes breathe {
+  from {
+    opacity: 0.2;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

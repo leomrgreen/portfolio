@@ -5,6 +5,7 @@ import { ReactTyped } from "react-typed"
 const Banner = () => {
   return (
     <>
+    <div className="banner-img top-gradient"></div>
     <section className="banner-section">
       <div className="banner">
       <div className="welcome hidden">
@@ -24,7 +25,7 @@ const Banner = () => {
       <a href="#about-section" className="readmore-btn">Read More <FontAwesomeIcon icon={faCircleArrowDown} /> </a>
       </div>
     </section>
-    <div className="banner-img"></div>
+    <div className="banner-img bottom-gradient"></div>
     </>
   );
 };

@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCode, faUser } from "@fortawesome/free-solid-svg-icons"
+import { faCheckCircle, faCode, faUser } from "@fortawesome/free-solid-svg-icons"
 import responsive from "../images/Responsive-cuate.png"
 import dayTime from "../images/day.png"
 import nightTime from "../images/night.png"
@@ -7,6 +7,7 @@ import React, { useState } from 'react';
 import { FiSun } from "react-icons/fi";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import techStack from "../data/techStack"
+import robot from "../images/service-1.png"
 
 
 const Skills = () => {
@@ -45,6 +46,19 @@ const Skills = () => {
                             </div>
                             <div className="comp-page"></div>
                         </div>   
+                    </div>
+                    <div className="skill-card robot-card hidden">
+                           <div className="robot">
+                           <img src={robot} alt="robot" className="robot-img" />
+                           </div>
+                           <div className="approach">
+                            <span className="approach-title">APPROACH</span>
+                            <ul className="approach-list">
+                                <li className="list-item"><FontAwesomeIcon icon={faCheckCircle} className="checkMark"/> Design</li>
+                                <li className="list-item"><FontAwesomeIcon icon={faCheckCircle} className="checkMark"/> Develop</li>
+                                <li className="list-item"><FontAwesomeIcon icon={faCheckCircle} className="checkMark"/> Deploy</li>
+                            </ul>
+                           </div>
                     </div>
                     <div className="skill-card right hidden">
                         <span className="tech-title">My Tech Stack</span>
