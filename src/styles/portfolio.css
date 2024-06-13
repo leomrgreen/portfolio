@@ -102,4 +102,5 @@
 .tags {
   color: var(--white);
   font-style: italic;
+  font-size: 12px;
 }
