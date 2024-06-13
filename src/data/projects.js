@@ -28,6 +28,16 @@ const projects = [
         },
         github: 'https://github.com/NoroffFEU/FED1-PE1-leomrgreen'
     },
+
+    {
+        title: "HooBank",
+        description: "Bank application from a fictional company",
+        image: {
+            url: "https://i.ibb.co/61WfFWN/Sk-rmbild-2024-06-13-192959.png",
+            alt: "Screenshot of HooBank website"
+        },
+        github: "https://github.com/leomrgreen/hoobank"
+    }
 ];
 
 export default projects;
