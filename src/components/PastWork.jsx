@@ -18,6 +18,10 @@ const Portfolio = () => {
                     <h4>{project.title}</h4>
                     <span>{project.description}</span>
                     <img src={project.image.url} alt={project.image.alt} />
+                    <div className="project-tags-container">
+                     {project.tags.map((tag, tagIndex) => (
+                     <span className="tags" key={tagIndex}>{tag}</span>))}
+                     </div>
                     <a href={project.github} target="_blank" className="src-code"><FontAwesomeIcon icon={faCode} /> </a>
                 </div>
             ))}
