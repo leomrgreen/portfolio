@@ -26,10 +26,6 @@
   font-family: "Anton", sans-serif;
   font-size: 35px;
   color: var(--white);
-  background-image: url("../images/grid.png");
-  background-position: center;
-  background-size: contain;
-  display: grid;
   margin-inline: auto;
   width: 100%;
 }
@@ -177,6 +173,17 @@
   width: 80%;
   margin: auto;
   gap: 15px;
+}
+
+@media (max-width: 800px) {
+  .bento-grid {
+    height: auto;
+    width: auto;
+  }
+
+  .stack {
+    padding: 1rem;
+  }
 }
 
 .skill-card:nth-child(4) {
