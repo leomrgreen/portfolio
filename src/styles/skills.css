@@ -245,16 +245,6 @@
   transition: 200ms ease;
 }
 
-.skill-gradient {
-  height: 100px;
-  background: linear-gradient(
-    52deg,
-    rgba(26, 22, 37, 1) 0%,
-    rgba(145, 113, 248, 0.7245273109243697) 51%,
-    rgba(26, 22, 37, 1) 100%
-  );
-}
-
 @media (max-width: 600px) {
   .bento-grid {
     padding: 0 0 3rem 0;
