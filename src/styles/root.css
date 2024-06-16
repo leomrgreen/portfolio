@@ -24,7 +24,6 @@
     var(--color-dark-100)
   );
   --shadow: #bbbbbb;
-  --nav-clr: hsla(0, 0%, 100%, 0.8);
 }
 
 :root {
@@ -52,6 +51,5 @@
     rgba(145, 113, 248, 0.21),
     #00000000
   );
-  --nav-clr: hsla(253, 27%, 6%, 0.8);
   --shadow: #000000;
 }

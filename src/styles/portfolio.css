@@ -25,7 +25,7 @@
 }
 
 .project-grid {
-  width: min(90rem, 95%);
+  width: min(70rem, 95%);
   margin-inline: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);

@@ -15,7 +15,7 @@
 
 .skill-grid {
   display: grid;
-  width: min(90rem, 95%);
+  width: min(70rem, 95%);
   grid-template-columns: repeat(2, 1fr);
   margin-inline: auto;
   gap: 2rem;
