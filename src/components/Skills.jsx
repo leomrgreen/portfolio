@@ -9,6 +9,8 @@ import { FiSun } from "react-icons/fi";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import techStack from "../data/techStack"
 import robot from "../images/service-1.png"
+import Carousel from "./Carousel"
+import { slides } from "../data/carouselData.json"
 
 
 const Skills = () => {
@@ -64,6 +66,10 @@ const Skills = () => {
                                 {!isDay ? <FiSun className="sun-yel"/> : <BsFillMoonStarsFill className="moon-pur"/>}
                             </button>
                         </div>
+                    </div>
+                    <div className="skill-card carousel-card">
+                        <span className="comp-title">Responsive Carousel</span>
+                        <Carousel data={slides} />
                     </div>
                 </div>
             </section>

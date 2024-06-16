@@ -1,0 +1,24 @@
+{
+    "slides": [
+        {
+            "src": "https://i.ibb.co/zG0Nk8K/Robot-face-cuate.png",
+            "alt": "Robot Head Illustration"
+        },
+
+        {
+            "src": "https://i.ibb.co/2SKB5Vd/Astronaut-suit-cuate.png",
+            "alt": "Astronaut on the moon"
+        }
+        
+        ,
+        {
+            "src": "https://i.ibb.co/DL289sC/Astronaut-suit-pana.png",
+            "alt": "Astronaut in space"
+        },
+        
+        {
+            "src": "https://i.ibb.co/BGRWVf2/Teacher-cuate.png",
+            "alt": "Professor in a classroom"
+        }
+    ]
+}

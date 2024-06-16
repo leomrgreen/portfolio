@@ -40,7 +40,7 @@ const projects = [
             alt: "Screenshot of HooBank website"
         },
         github: "https://github.com/leomrgreen/hoobank",
-        tags: ["REACT.JS", "TAILWINDCSS"]
+        tags: ["REACT.JS", "TAILWIND CSS"]
     }
 ];
 
