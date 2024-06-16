@@ -26,14 +26,20 @@
   font-family: "Anton", sans-serif;
   font-size: 35px;
   color: var(--white);
+  display: flex;
+  flex-direction: column;
   margin-inline: auto;
   width: 100%;
 }
 
 .response img {
   max-width: 100%;
+  margin: auto;
 }
 
+.tailwind-comp {
+  max-width: 100%;
+}
 .response-title {
   display: flex;
   justify-content: center;

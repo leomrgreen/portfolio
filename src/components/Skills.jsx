@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheckCircle, faCode, faUser } from "@fortawesome/free-solid-svg-icons"
-import responsive from "../images/Responsive-cuate.png"
+import responsive from "../assets/responsive-web.svg"
+import tailwind_component from "../assets/component.svg"
 import dayTime from "../images/day.png"
 import nightTime from "../images/night.png"
 import React, { useState } from 'react';
@@ -32,20 +33,7 @@ const Skills = () => {
                     </div>
                     <div className="skill-card right hidden">
                         <span className="comp-title">Building Components</span>
-                        <div className="comp-card">
-                            <div className="comp-nav">
-                                <span className="dot close"></span>
-                                <span className="dot minimize"></span>
-                                <span className="dot open"></span>
-                            </div>
-                            <div className="comp-header">
-                                <span className="avatar">
-                                    <FontAwesomeIcon icon={faUser} />
-                                </span>
-                                <span className="searchbar"></span>
-                            </div>
-                            <div className="comp-page"></div>
-                        </div>   
+                        <img src={tailwind_component} alt="tailwind component illustration" className="tailwind-comp"/>
                     </div>
                     <div className="skill-card robot-card hidden">
                            <div className="robot">

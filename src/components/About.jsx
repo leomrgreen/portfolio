@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircleInfo, faUserTie, faChartLine, faGears, faCircleArrowUp } from '@fortawesome/free-solid-svg-icons'
+import { faCircleInfo, faUserTie, faChartLine, faGears } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import aboutdev from "../images/dev.png"
+import aboutdev from "../assets/dev.svg"
 
 const About = () => {
   return (
@@ -41,8 +41,8 @@ const About = () => {
         <p>I'm also working on learning the <span className="spanmark">basics and fundamental parts of back-end development</span></p>
         </div>
       </div>
+      <img src={aboutdev} alt="developer in his chair" className='dev-chair hidden'/>
     </section>
-    <img src={aboutdev} alt="developer in his chair" className='dev-chair hidden'/>
    </>
   )
 }

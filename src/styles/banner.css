@@ -108,6 +108,7 @@ h2 {
   margin-top: -10rem;
   position: absolute;
   animation: breathe 2s ease-in;
+  filter: blur(100px);
 }
 
 .top-gradient {

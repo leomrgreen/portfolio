@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import chatimg from "../images/Chat-pana.png";
+import chatimg from "../assets/chat.svg";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -54,9 +54,9 @@ const Contact = () => {
                         <button type='submit' className='send-btn'>SEND <FontAwesomeIcon icon={faPaperPlane} /></button>
                     </form>
                </div>
-                    <img src={chatimg} alt="man standing next to a big phone" className='hidden'/>
                     <div className="btn-container-contact hidden">
-                        <span className="contact-subtitle">Or Just</span>
+                    <img src={chatimg} alt="man standing next to a big phone" className='hidden'/>
+                    <span className="contact-subtitle">Or Just</span>
                         <button onClick={copyEmailToClipboard}>
                             {buttonText} 
                             <FontAwesomeIcon icon={faEnvelope} />

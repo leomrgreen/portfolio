@@ -11,7 +11,8 @@ nav {
   margin-top: 1rem;
   border-radius: 20px;
   z-index: 1000;
-  background-color: var(--color-dark-100);
+  background-color: var(--nav-clr);
+  backdrop-filter: blur(10px);
   box-shadow: 1px 0 10px var(--shadow);
 }
 

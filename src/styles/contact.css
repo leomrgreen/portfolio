@@ -21,10 +21,9 @@
   margin: auto;
   align-items: center;
   display: grid;
+  gap: 1rem;
   grid-template-columns: 1fr 1fr;
-  border: 2px solid var(--color-primary-500);
   padding: 1rem;
-  border-radius: 20px;
 }
 
 .contact-card img {
@@ -119,7 +118,7 @@
 
 .contact-subtitle {
   font-family: "Anton", sans-serif;
-  font-size: 25px;
+  font-size: 35px;
   display: flex;
   justify-content: center;
   color: var(--white);
