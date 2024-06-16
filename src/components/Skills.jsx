@@ -8,7 +8,7 @@ import React, { useState } from 'react';
 import { FiSun } from "react-icons/fi";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import techStack from "../data/techStack"
-import robot from "../images/service-1.png"
+import approach from "../assets/approach.svg"
 import Carousel from "./Carousel"
 import { slides } from "../data/carouselData.json"
 
@@ -39,7 +39,7 @@ const Skills = () => {
                     </div>
                     <div className="skill-card robot-card hidden">
                            <div className="robot">
-                           <img src={robot} alt="robot" className="robot-img" />
+                           <img src={approach} alt="robot" className="robot-img" />
                            </div>
                            <div className="approach">
                             <span className="approach-title">APPROACH</span>
