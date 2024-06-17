@@ -13,6 +13,11 @@ const Header = () => {
     setIsNavActive(!isNavActive);
   }
 
+  document.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    window.scrollY > 0 ? nav.classList.add('scroll') : nav.classList.remove('scroll')
+  })
+
   return (
     <nav id='nav' className='hidden'>
       <a href="/" className="logo"><h1>Leo</h1></a>

@@ -10,10 +10,14 @@ nav {
   padding: 1rem 2rem 1rem 2rem;
   align-items: center;
   margin-top: 1rem;
-  border-radius: 20px;
+
   z-index: 1000;
+}
+
+nav.scroll {
   background-color: var(--color-dark-200);
   box-shadow: 1px 0 10px var(--shadow);
+  border-radius: 20px;
 }
 
 ul {

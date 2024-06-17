@@ -18,28 +18,29 @@ const Carousel = ({ data }) => {
    <div className="image-wrapper">
    <div className='carousel-container'>
         {data.map((item, index) => {
-            return <img src={item.src} alt={item.alt} key={index} className={slide === index ? "slide" : "slide-hidden"}/>
+          return <img src={item.src} alt={item.alt} key={index} 
+          className={slide === index ? "slide" : "slide-hidden"}/>
     })} 
-     </div>
+    </div>
    </div>
       <div className="controller-container">
         <div className="carousel-controller">
-                <span className='indicators'>
-                    {data.map((_, index) => {
-                        return <button 
-                        key={index} onClick={() => setSlide(index)} 
-                        className={slide === index ? "indicator" : "indicator indicator-inactive"}>
-                        </button>
-                    })}
-                </span>
-                <div className="arrow-container">
-                <button onClick={prevSlide} className='arrow-btn'>
+            <span className='indicators'>
+                {data.map((_, index) => {
+                    return <button 
+                    key={index} onClick={() => setSlide(index)} 
+                    className={slide === index ? "indicator" : "indicator indicator-inactive"}>
+                    </button>
+                })}
+            </span>
+            <div className="arrow-container">
+              <button onClick={prevSlide} className='arrow-btn'>
                 <FontAwesomeIcon icon={faChevronLeft} className='arrow'/>
-                </button>
-                <button onClick={nextSlide} className='arrow-btn'>
+              </button>
+              <button onClick={nextSlide} className='arrow-btn'>
                 <FontAwesomeIcon icon={faChevronRight} className='arrow'/>
-                </button>
-                </div>
+              </button>
+            </div>
         </div>
       </div>
        </>
