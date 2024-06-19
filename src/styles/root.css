@@ -24,6 +24,7 @@
     var(--color-dark-100)
   );
   --shadow: #bbbbbb;
+  --modal-bg: hsla(0, 0%, 100%, 0.507);
 }
 
 :root {
@@ -52,4 +53,5 @@
     #00000000
   );
   --shadow: #000000;
+  --modal-bg: hsla(0, 0%, 0%, 0.507);
 }

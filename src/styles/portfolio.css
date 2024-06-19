@@ -22,6 +22,13 @@
   max-width: 100%;
   border-radius: 10px;
   box-shadow: 0px 5px 10px var(--color-dark-100);
+  cursor: pointer;
+  transition: 200ms ease;
+}
+
+.project-card img:hover {
+  scale: 1.03;
+  transition: 200ms ease;
 }
 
 .project-grid {
