@@ -1,5 +1,6 @@
 import React from "react";
-import { FaXmark } from "react-icons/fa6";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmarkCircle } from "@fortawesome/free-solid-svg-icons";
 
 const Modal = ({ project, onClose }) => {
   return (
@@ -7,7 +8,7 @@ const Modal = ({ project, onClose }) => {
       <div className="modal-content">
         <h1 className="modal-title">{project.title}</h1>
         <span className="close-modal" onClick={onClose}>
-          <FaXmark className="close-icon" />
+          <FontAwesomeIcon icon={faXmarkCircle} className="close-icon" />
         </span>
         <img src={project.image.url} alt={project.image.alt} />
         <div className="modal-desc">

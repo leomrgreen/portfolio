@@ -29,7 +29,6 @@
   width: min(70rem, 90%);
   margin: auto;
   align-self: flex-start;
-  cursor: pointer;
 }
 
 .modal-title {
@@ -61,4 +60,5 @@
 
 .close-icon {
   font-size: 50px;
+  cursor: pointer;
 }

@@ -1,9 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCheckCircle,
-  faCode,
-  faUser,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCheckCircle, faCode } from "@fortawesome/free-solid-svg-icons";
 import responsive from "../assets/responsive-web.svg";
 import tailwind_component from "../assets/component.svg";
 import dayTime from "../images/day.png";
