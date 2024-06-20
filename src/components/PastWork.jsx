@@ -27,14 +27,16 @@ const Portfolio = () => {
           <div className="project-card hidden" key={index}>
             <h4>{project.title}</h4>
             <span>{project.description}</span>
-            <img 
-              src={project.image.url} 
-              alt={project.image.alt} 
-              onClick={() => openModal(project)} 
+            <img
+              src={project.image.url}
+              alt={project.image.alt}
+              onClick={() => openModal(project)}
             />
             <div className="project-tags-container">
               {project.tags.map((tag, tagIndex) => (
-                <span className="tags" key={tagIndex}>{tag}</span>
+                <span className="tags" key={tagIndex}>
+                  {tag}
+                </span>
               ))}
             </div>
             <a href={project.github} target="_blank" className="src-code">
