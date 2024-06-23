@@ -26,7 +26,7 @@
   display: flex;
   width: min(60rem, 90%);
   margin: auto;
-  align-self: flex-start;
+  justify-content: flex-end;
 }
 
 .modal-title {
@@ -54,7 +54,7 @@
 }
 
 .close-icon {
-  font-size: 50px;
+  font-size: 35px;
   cursor: pointer;
   transition: 200ms ease;
 }

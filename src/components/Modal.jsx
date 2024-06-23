@@ -6,10 +6,10 @@ const Modal = ({ project, onClose }) => {
   return (
     <div className="modal flex-center">
       <div className="modal-content">
-        <h1 className="modal-title">{project.title}</h1>
         <span className="close-modal" onClick={onClose}>
           <FontAwesomeIcon icon={faXmarkCircle} className="close-icon" />
         </span>
+        <h1 className="modal-title">{project.title}</h1>
         <img src={project.image.url} alt={project.image.alt} />
         <div className="modal-desc">
           <p>{project.description}</p>
