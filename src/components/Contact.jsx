@@ -42,13 +42,15 @@ const Contact = () => {
   return (
     <>
       <section className="contact-section hidden" id="contact-section">
-        <div className="contact-title">
+        <div className="contact-title flex-center">
           <h2>Contact</h2>
           <FontAwesomeIcon icon={faPhone} />
         </div>
         <div className="contact-card">
           <div className="form-container">
-            <span className="contact-subtitle">Fill Out This Form</span>
+            <span className="contact-subtitle flex-center">
+              Fill Out This Form
+            </span>
             <form className="contact-form" onSubmit={sendEmail} ref={formRef}>
               <label htmlFor="emailFrom">Your Email:</label>
               <input
@@ -71,13 +73,13 @@ const Contact = () => {
               </button>
             </form>
           </div>
-          <div className="btn-container-contact hidden">
+          <div className="btn-container-contact hidden flex-center">
             <img
               src={chatimg}
               alt="man standing next to a big phone"
               className="hidden"
             />
-            <span className="contact-subtitle">Or Just</span>
+            <span className="contact-subtitle flex-center">Or Just</span>
             <button onClick={copyEmailToClipboard}>
               {buttonText}
               <FontAwesomeIcon icon={faEnvelope} />

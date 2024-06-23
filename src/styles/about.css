@@ -9,8 +9,6 @@
 }
 
 .about-title {
-  display: flex;
-  justify-content: center;
   align-items: center;
   padding-bottom: 2rem;
   gap: 1rem;

@@ -1,7 +1,5 @@
 .banner {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   margin: auto;
@@ -12,33 +10,25 @@
 
 .banner-section {
   height: 100vh;
-  display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
 .welcome {
   color: var(--white);
-  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  justify-content: center;
   font-family: "Anton", sans-serif;
 }
 
 h1 {
   font-size: clamp(3.4375rem, -2.0313rem + 17.5vw, 7.8125rem);
   align-items: center;
-  display: flex;
-  justify-content: center;
 }
 
 h2 {
   text-align: center;
-  display: flex;
-  justify-content: center;
   gap: 1rem;
   font-size: 4vw;
   text-wrap: nowrap;
@@ -76,8 +66,6 @@ h2 {
   border-radius: 20px;
   align-items: center;
   margin: auto;
-  display: flex;
-  justify-content: center;
   gap: 10px;
   font-size: 25px;
   text-decoration: none;

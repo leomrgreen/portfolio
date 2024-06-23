@@ -6,11 +6,11 @@ const Banner = () => {
   return (
     <>
       <div className="banner-img top-gradient"></div>
-      <section className="banner-section">
-        <div className="banner">
-          <div className="welcome hidden">
-            <h1>Hi there,</h1>
-            <h2>
+      <section className="banner-section flex-center">
+        <div className="banner flex-center">
+          <div className="welcome hidden flex-center">
+            <h1 className="flex-center">Hi there,</h1>
+            <h2 className="flex-center">
               I Am Into
               <ReactTyped
                 strings={["Web Development", "Design", "Front End Development"]}
@@ -21,7 +21,7 @@ const Banner = () => {
               ></ReactTyped>{" "}
             </h2>
           </div>
-          <a href="#about-section" className="readmore-btn">
+          <a href="#about-section" className="readmore-btn flex-center">
             Read More <FontAwesomeIcon icon={faCircleArrowDown} />{" "}
           </a>
         </div>

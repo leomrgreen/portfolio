@@ -1,7 +1,5 @@
 .contact-title {
   font-family: "Anton", sans-serif;
-  display: flex;
-  justify-content: center;
   align-items: center;
   font-size: 45px;
   gap: 10px;
@@ -39,9 +37,7 @@
 }
 
 .btn-container-contact {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 10px;
 }
 
@@ -119,8 +115,6 @@
 .contact-subtitle {
   font-family: "Anton", sans-serif;
   font-size: 35px;
-  display: flex;
-  justify-content: center;
   color: var(--white);
 }
 

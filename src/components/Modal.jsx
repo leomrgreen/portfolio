@@ -4,7 +4,7 @@ import { faXmarkCircle } from "@fortawesome/free-solid-svg-icons";
 
 const Modal = ({ project, onClose }) => {
   return (
-    <div className="modal">
+    <div className="modal flex-center">
       <div className="modal-content">
         <h1 className="modal-title">{project.title}</h1>
         <span className="close-modal" onClick={onClose}>
@@ -14,7 +14,7 @@ const Modal = ({ project, onClose }) => {
         <div className="modal-desc">
           <p>{project.description}</p>
           <span>Built with:</span>
-          <div className="languages">
+          <div className="languages flex-center">
             {project.tags.map((tag, tagIndex) => (
               <span className="tags" key={tagIndex}>
                 {tag}

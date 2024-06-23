@@ -19,7 +19,7 @@ const Carousel = ({ data }) => {
   return (
     <>
       <div className="image-wrapper">
-        <div className="carousel-container">
+        <div className="carousel-container flex-center">
           {data.map((item, index) => {
             return (
               <img

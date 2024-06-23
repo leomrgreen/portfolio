@@ -12,7 +12,7 @@ const About = () => {
   return (
     <>
       <section className="about-section hidden" id="about-section">
-        <div className="about-title">
+        <div className="about-title flex-center">
           <h2>About</h2>{" "}
           <FontAwesomeIcon icon={faCircleInfo} className="fa-info" />
         </div>
