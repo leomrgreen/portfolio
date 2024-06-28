@@ -68,7 +68,6 @@ li a:hover {
 @media (max-width: 1000px) {
   nav {
     margin-top: 0;
-    border-radius: 0 0px 20px 20px;
     align-items: center;
     display: flex;
   }
@@ -76,6 +75,10 @@ li a:hover {
   .burger {
     display: flex;
     font-size: 25px;
+  }
+
+  li a {
+    font-size: clamp(3.9375rem, -2.0313rem + 17.5vw, 7.8125rem);
   }
 
   .navLinks {
@@ -98,17 +101,9 @@ li a:hover {
     display: flex;
     animation: slideIn 200ms ease;
   }
-}
 
-@keyframes slideIn {
-  from {
-    transform: translateX(100%);
-    scale: 0.5;
-  }
-
-  to {
-    transform: translateX(0);
-    scale: 1;
+  nav.scroll {
+    border-radius: 0px 0px 15px 15px;
   }
 }
 
@@ -138,4 +133,31 @@ li a:hover {
   text-decoration: none;
   display: block;
   font-size: 27px;
+}
+
+.navLinks.active {
+  display: flex;
+  animation: slideIn 200ms ease forwards;
+}
+
+.navLinks.slideOut {
+  animation: slideOut 200ms ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }

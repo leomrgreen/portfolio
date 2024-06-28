@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { useRef, useState } from "react";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import DarkMode from "./DarkMode";
 
 const Header = () => {
@@ -9,8 +9,16 @@ const Header = () => {
   const [isNavActive, setIsNavActive] = useState(false);
 
   const showNavBar = () => {
-    navRef.current.classList.toggle("active");
-    setIsNavActive(!isNavActive);
+    if (isNavActive) {
+      navRef.current.classList.add("slideOut");
+      setTimeout(() => {
+        navRef.current.classList.remove("active", "slideOut");
+        setIsNavActive(false);
+      }, 200);
+    } else {
+      navRef.current.classList.add("active");
+      setIsNavActive(true);
+    }
   };
 
   document.addEventListener("scroll", () => {
@@ -27,7 +35,7 @@ const Header = () => {
       </a>
       <ul ref={navRef} className="navLinks">
         <li>
-          <a href="#about-section" onClick={showNavBar} className="testar">
+          <a href="#about-section" onClick={showNavBar}>
             About
           </a>
         </li>
