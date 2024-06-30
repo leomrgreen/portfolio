@@ -13,15 +13,21 @@ footer {
 }
 
 .middle {
-  color: var(--color-dark-600);
   display: flex;
   flex-direction: column;
   text-align: center;
   gap: 10px;
 }
 
-.middle address {
-  font-style: normal;
+.middle a {
+  text-decoration: none;
+  color: var(--color-dark-600);
+  transition: 200ms ease;
+}
+
+.middle a:hover {
+  color: var(--white);
+  transition: 200ms ease;
 }
 
 .right-side {

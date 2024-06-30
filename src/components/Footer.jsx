@@ -9,8 +9,8 @@ const Footer = () => {
         <FontAwesomeIcon icon={faCopyright} /> Leo Jonsson
       </div>
       <div className="middle">
-        <address>jonssonleonardo@gmail.com</address>
-        <p>+46737043031</p>
+        <a href="mailto:jonssonleonardo@gmail.com">jonssonleonardo@gmail.com</a>
+        <a href="tel:+46737043031">+46737043031</a>
       </div>
       <div className="right-side">
         <a href="https://www.linkedin.com/in/leo-jonsson-b98048304/">
