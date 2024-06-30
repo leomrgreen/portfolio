@@ -28,6 +28,12 @@ ul {
   align-items: center;
 }
 
+.line {
+  height: 20px;
+  width: 1px;
+  background-color: var(--color-dark-600);
+}
+
 li a {
   cursor: pointer;
   color: var(--color-dark-600);
@@ -39,7 +45,6 @@ li a {
 li a:hover {
   transition: 100ms ease-in;
   color: var(--white);
-  text-shadow: 0 0 30px var(--color-primary-100);
 }
 
 .logo:hover,
@@ -97,6 +102,10 @@ li a:hover {
     background-color: var(--color-dark-100);
   }
 
+  .line {
+    display: none;
+  }
+
   .navLinks.active {
     display: flex;
     animation: slideIn 200ms ease;
@@ -110,7 +119,7 @@ li a:hover {
 .dark-toggle {
   background: none;
   color: var(--white);
-  font-size: 27px;
+  font-size: 20px;
 }
 
 .nav-right {
@@ -132,7 +141,8 @@ li a:hover {
   color: var(--white);
   text-decoration: none;
   display: block;
-  font-size: 27px;
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 
 .navLinks.active {

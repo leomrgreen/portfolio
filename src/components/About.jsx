@@ -4,6 +4,7 @@ import {
   faUserTie,
   faChartLine,
   faGears,
+  faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import aboutdev from "../assets/dev.svg";
@@ -30,10 +31,12 @@ const About = () => {
               </span>{" "}
               currently studying at{" "}
               <span className="spanmark">Noroff University</span>. I'm based in{" "}
-              <span className="spanmark">Stockholm, Sweden</span> & I am
-              passionate about creating intuitive and engaging web experiences.
-              My education at Noroff University has equipped me with the skills
-              and knowledge to bring innovative designs to life, with a{" "}
+              <span className="spanmark">Stockholm, Sweden</span>{" "}
+              <FontAwesomeIcon icon={faLocationDot} className="location" /> & I
+              am passionate about creating intuitive and engaging web
+              experiences. My education at Noroff University has equipped me
+              with the skills and knowledge to bring innovative designs to life,
+              with a{" "}
               <span className="spanmark">
                 strong focus on usability and performance
               </span>
