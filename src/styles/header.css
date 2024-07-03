@@ -76,10 +76,17 @@ li a:hover {
     align-items: center;
     display: flex;
   }
-
+  .navLinks.slideOut {
+    animation: slideOut 200ms ease forwards;
+  }
   .burger {
     display: flex;
     font-size: 25px;
+  }
+
+  .navLinks.active {
+    display: flex;
+    animation: slideIn 200ms ease forwards;
   }
 
   li a {
@@ -143,15 +150,6 @@ li a:hover {
   display: block;
   font-size: 20px;
   margin-bottom: 5px;
-}
-
-.navLinks.active {
-  display: flex;
-  animation: slideIn 200ms ease forwards;
-}
-
-.navLinks.slideOut {
-  animation: slideOut 200ms ease forwards;
 }
 
 @keyframes slideIn {
