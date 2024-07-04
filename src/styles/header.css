@@ -49,8 +49,7 @@ li a:hover {
 
 .logo:hover,
 .logo h1:hover,
-.github-logo:hover,
-.dark-toggle:hover {
+.github-logo:hover {
   color: var(--color-primary-100);
   transition: 200ms ease;
 }

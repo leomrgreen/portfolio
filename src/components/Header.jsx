@@ -14,7 +14,7 @@ const Header = () => {
       setTimeout(() => {
         navRef.current.classList.remove("active", "slideOut");
         setIsNavActive(false);
-      }, 200);
+      }, 0);
     } else {
       navRef.current.classList.add("active");
       setIsNavActive(true);
